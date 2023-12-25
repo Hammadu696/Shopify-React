@@ -1,0 +1,132 @@
+
+.slider-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Hide the scrollbar */
+    scrollbar-width: none;
+    /* Firefox */
+    
+    -ms-overflow-style: none;
+    /* Internet Explorer 11 */
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+    /* background-color: #f0f0f0; */
+}
+
+
+
+
+
+
+.product-cardx {
+    /* width: 300px;
+border: 1px solid #ccc;
+border-radius: 5px;
+overflow: hidden;
+transition: height 0.3s ease; */
+    border: 1px solid #70798b4d;
+    border-radius: 30px;
+    margin: 30px 20px 60px;
+    padding: 0 30px;
+    transition: all 300ms ease-in;
+    width: calc(25% - 40px) !important;
+    flex-basis: calc(25% - 49px);
+}
+
+
+.product-imagex img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.product-infox {
+    padding: 10px;
+}
+
+.product-titlex {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.product-pricex {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.product-descriptionx {
+    margin: 0;
+}
+
+.wrapbtnx {
+    display: none;
+}
+
+.btn-add-cartx {
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    background-image: linear-gradient(98deg, #4f56db 0%, #0c19b7 100%);
+}
+
+
+
+/* .add-to-cart-btn {
+display: none;
+width: 100%;
+padding: 10px;
+background-color: #3498db;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+} */
+
+/* .product-card:hover  {
+height: 350px;
+} */
+
+.product-cardx:hover .product-imagex img {
+    opacity: 0.7;
+}
+
+.product-cardx:hover .wrapbtnx {
+    display: block;
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
